@@ -2,6 +2,7 @@
 :root{
     --my-navbar-height: 100px;
     --my-sidebar-width: 100px;
+    --my-sidebar-width-lg: 150px;
 }
 /*COMMON*/
 /*LAYOUT*/
@@ -14,8 +15,7 @@
 .my_navbar{
     width: 100%;
     height: var(--my-navbar-height);
-    /*debug*/
-    background-color: aqua;
+    background-color: white;
 }
 .my_main-content{
     height: calc(100% - var(--my-navbar-height));
@@ -43,4 +43,15 @@
     /*debug*/
     background-color: orange;
 }
+/*DATA CONTENT CHILDS*/
+
 /*MEDIA QUERIES*/
+@media screen and (min-width: 992px) {
+    /*MAIN CONTENT CHILDS*/
+    .my_sidebar{
+        width: var(--my-sidebar-width-lg);
+    }
+    .my_data-content{
+        width: calc(100% - var(--my-sidebar-width-lg));
+    }
+}
