@@ -3,8 +3,8 @@
     --my-navbar-height: 100px;
     --my-sidebar-width: 100px;
     --my-sidebar-width-lg: 150px;
-    --my-data-content-top-height: 300px;
-    --my-data-content-top-height-md: 200px;
+    --my-data-content-top-height: 200px;
+    --my-data-content-top-height-md: 150px;
 }
 /*COMMON*/
 /*LAYOUT*/
@@ -42,17 +42,25 @@
 }
 /*DATA CONTENT CHILDS*/
 .my_data-content-top{
-    width: 100%;
     height: var(--my-data-content-top-height);
     padding: 20px;
     background-color: blue;
     color: white;
 }
+.my_data-content-main{
+    height: 100%;
+    /*debug*/
+    background-color: orange;
+}
 /*MEDIA QUERIES*/
+/*MD QUERY*/
 @media screen and (min-width: 768px) {
     /*DATA CONTENT CHILDS*/
-    
+    .my_data-content-top{
+        height: var(--my-data-content-top-height-md);
+    }
 }
+/*LG QUERY*/
 @media screen and (min-width: 992px) {
     /*MAIN CONTENT CHILDS*/
     .my_sidebar{
