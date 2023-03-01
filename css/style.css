@@ -23,6 +23,13 @@
     /*debug*/
     background-color: lightgreen;
 }
+.my_border{
+    border: 1px solid black;
+}
+/*NAVBAR CHILDS*/
+.my_navbar-col{
+    height: var(--my-navbar-height);
+}
 /*MAIN CONTENT CHILDS*/
 .my_sidebar{
     width: var(--my-sidebar-width);
@@ -36,3 +43,4 @@
     /*debug*/
     background-color: orange;
 }
+/*MEDIA QUERIES*/
