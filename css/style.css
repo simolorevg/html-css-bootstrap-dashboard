@@ -4,6 +4,7 @@
     --my-sidebar-width: 100px;
     --my-sidebar-width-lg: 150px;
     --my-data-content-top-height: 300px;
+    --my-data-content-top-height-md: 200px;
 }
 /*COMMON*/
 /*LAYOUT*/
@@ -37,15 +38,21 @@
 .my_data-content{
     width: calc(100% - var(--my-sidebar-width));
     height: 100%;
+    overflow-y: auto;
 }
 /*DATA CONTENT CHILDS*/
 .my_data-content-top{
     width: 100%;
     height: var(--my-data-content-top-height);
+    padding: 20px;
     background-color: blue;
     color: white;
 }
 /*MEDIA QUERIES*/
+@media screen and (min-width: 768px) {
+    /*DATA CONTENT CHILDS*/
+    
+}
 @media screen and (min-width: 992px) {
     /*MAIN CONTENT CHILDS*/
     .my_sidebar{
