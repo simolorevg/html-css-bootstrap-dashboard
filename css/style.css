@@ -71,8 +71,9 @@ a{
 .my_sidebar a{
     color: inherit;
 }
-.my_sidebar ul li{
-    margin: 10px auto;
+.my_sidebar ul li a i{
+    margin-right: 10px;
+    margin-top: 10px;
 }
 .my_data-content{
     width: calc(100% - var(--my-sidebar-width));
@@ -89,8 +90,6 @@ a{
 .my_data-content-main{
     height: 100%;
     padding: 20px;
-    /*debug*/
-    background-color: grey;
 }
 /*DATA CONTENT MAIN CHILDS*/
 .my_first-row-container,
@@ -100,7 +99,11 @@ a{
 /*MEDIA QUERIES*/
 /*XS QUERY*/
 @media screen and (min-width: 200px) {
+    /*NAVBAR CHILDS*/
     img[alt="Original Size Logo"]{
+        display: none;
+    }
+    .my_sidebar ul li a span{
         display: none;
     }
 }
@@ -119,6 +122,13 @@ a{
     }
     .my_navbar-logo{
         display: none;
+    }
+    .my_sidebar ul li a span{
+        display: block;
+    }
+    .my_sidebar ul li a{
+        display: flex;
+        align-items: center;
     }
     /*MAIN CONTENT CHILDS*/
     .my_sidebar{
