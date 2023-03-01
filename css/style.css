@@ -3,14 +3,13 @@
     --my-navbar-height: 100px;
     --my-sidebar-width: 100px;
     --my-sidebar-width-lg: 150px;
+    --my-data-content-top-height: 300px;
 }
 /*COMMON*/
 /*LAYOUT*/
 .my_wrapper{
     width: 100%;
     height: 100vh;
-    /*debug*/
-    background-color: lightcoral;
 }
 .my_navbar{
     width: 100%;
@@ -20,8 +19,6 @@
 .my_main-content{
     height: calc(100% - var(--my-navbar-height));
     width: 100%;
-    /*debug*/
-    background-color: lightgreen;
 }
 .my_border{
     border: 1px solid black;
@@ -40,11 +37,14 @@
 .my_data-content{
     width: calc(100% - var(--my-sidebar-width));
     height: 100%;
-    /*debug*/
-    background-color: orange;
 }
 /*DATA CONTENT CHILDS*/
-
+.my_data-content-top{
+    width: 100%;
+    height: var(--my-data-content-top-height);
+    background-color: blue;
+    color: white;
+}
 /*MEDIA QUERIES*/
 @media screen and (min-width: 992px) {
     /*MAIN CONTENT CHILDS*/
