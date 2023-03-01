@@ -1,0 +1,38 @@
+/*VARIABLES*/
+:root{
+    --my-navbar-height: 100px;
+    --my-sidebar-width: 100px;
+}
+/*COMMON*/
+/*LAYOUT*/
+.my_wrapper{
+    width: 100%;
+    height: 100vh;
+    /*debug*/
+    background-color: lightcoral;
+}
+.my_navbar{
+    width: 100%;
+    height: var(--my-navbar-height);
+    /*debug*/
+    background-color: aqua;
+}
+.my_main-content{
+    height: calc(100% - var(--my-navbar-height));
+    width: 100%;
+    /*debug*/
+    background-color: lightgreen;
+}
+/*MAIN CONTENT CHILDS*/
+.my_sidebar{
+    width: var(--my-sidebar-width);
+    height: 100%;
+    /*debug*/
+    background-color: lightpink;
+}
+.my_data-content{
+    width: calc(100% - var(--my-sidebar-width));
+    height: 100%;
+    /*debug*/
+    background-color: orange;
+}
