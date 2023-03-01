@@ -18,19 +18,34 @@
         <div class="my_navbar">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-4 col-md-3  col-lg-2 my_border my_navbar-col d-flex justify-content-center align-items-center">
+                    <div class="col-4 col-md-3  col-lg-2 my_navbar-col d-flex justify-content-center align-items-center">
                         <img src="img/mobile-logo.png" alt="Mobile Logo" class="my_navbar-logo">
                         <img src="img/logo.svg" alt="Original Size Logo">
                     </div>
-                    <div class="col-4 col-md-6 col-lg-8 my_border my_navbar-col d-flex justify-content-center align-items-center">
-                        <div class="input-group mb-3">
-                            
-                            <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
-                          </div>
-                          
+                    <div class="col-4 col-md-6 col-lg-8 my_navbar-col d-flex justify-content-center align-items-center">
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text" id="addon-wrapping">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <label for="search" class="d-none">Search</label>
+                            <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel" id="search">
+                        </div>
                     </div>
-                    <div class="col-4 col-md-3 col-lg-2 my_border my_navbar-col d-flex justify-content-center align-items-center">
-                        Lorem
+                    <div class="col-4 col-md-3 col-lg-2 my_navbar-col d-flex justify-content-between">
+                        <ul class="my_navbar-left-list d-flex align-items-center justify-content-between">
+                            <li>
+                                <i class="fa-solid fa-list"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-question"></i> 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </li>
+                        </ul>
+                        <a href="#bell" class="d-flex align-items-center">
+                            <i class="fa-solid fa-bell fa-2x my_gold-bell"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -40,6 +55,23 @@
         <div class="my_main-content d-flex">
             <!--Sidebar Section-->
             <div class="my_sidebar">
+                <ul class="d-flex-row">
+                    <li>
+                        <a href="#link">
+                            <i class="fa-solid fa-house"></i><span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#link">
+                            <i class="fa-solid fa-chart-simple"></i><span>Stats</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#link">
+                            <i class="fa-solid fa-signal"></i><span>Signal</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
             <!--/Sidebar Section-->
             <!--Data Content Section-->

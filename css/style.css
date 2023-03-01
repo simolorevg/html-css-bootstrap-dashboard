@@ -10,6 +10,12 @@
 img{
     max-width: 100%;
 }
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
 /*LAYOUT*/
 .my_wrapper{
     width: 100%;
@@ -19,6 +25,7 @@ img{
     width: 100%;
     height: var(--my-navbar-height);
     background-color: white;
+    color: black;
 }
 .my_main-content{
     height: calc(100% - var(--my-navbar-height));
@@ -27,9 +34,6 @@ img{
 .my_border{
     border: 1px solid black;
 }
-.my_border-red{
-   border: 1px solid red; 
-}
 /*NAVBAR CHILDS*/
 .my_navbar-col{
     height: var(--my-navbar-height);
@@ -37,12 +41,38 @@ img{
 .my_navbar-logo{
     width: 80px;
 }
+.my_search-input{
+    background-color: grey;
+    color: black;
+}
+.input-group-text{
+    background-color: #b4b2b2;
+}
+.my_navbar-col .form-control{
+    background-color: #b4b2b2;
+}
+.my_gold-bell{
+    color: gold;
+    width:30%;
+}
+.my_navbar-left-list{
+    width: 70%;
+    height: 100%;
+}
 /*MAIN CONTENT CHILDS*/
 .my_sidebar{
     width: var(--my-sidebar-width);
     height: 100%;
     background-image: url(../img/sidebar-bg.png);
     background-color: black;
+    color: white;
+    padding: 10px;
+}
+.my_sidebar a{
+    color: inherit;
+}
+.my_sidebar ul li{
+    margin: 10px auto;
 }
 .my_data-content{
     width: calc(100% - var(--my-sidebar-width));
