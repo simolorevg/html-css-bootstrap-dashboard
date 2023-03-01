@@ -24,6 +24,9 @@
 .my_border{
     border: 1px solid black;
 }
+.my_border-red{
+   border: 1px solid red; 
+}
 /*NAVBAR CHILDS*/
 .my_navbar-col{
     height: var(--my-navbar-height);
@@ -32,8 +35,8 @@
 .my_sidebar{
     width: var(--my-sidebar-width);
     height: 100%;
-    /*debug*/
-    background-color: lightpink;
+    background-image: url(../img/sidebar-bg.png);
+    background-color: black;
 }
 .my_data-content{
     width: calc(100% - var(--my-sidebar-width));
@@ -50,6 +53,13 @@
 .my_data-content-main{
     height: 100%;
     padding: 20px;
+    /*debug*/
+    background-color: grey;
+}
+/*DATA CONTENT MAIN CHILDS*/
+.my_first-row-container,
+.my_second-row-container{
+    padding: 10px;
 }
 /*MEDIA QUERIES*/
 /*MD QUERY*/
