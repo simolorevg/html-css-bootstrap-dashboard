@@ -68,4 +68,16 @@
     .my_data-content{
         width: calc(100% - var(--my-sidebar-width-lg));
     }
+    /*DATA CONTENT CHILDS*/
+    .my_data-content-main{
+        display: flex;
+        gap: 10px;
+    }
+    /*DATA CONTENT MAIN CHILDS*/
+    .my_first-row-container{
+        width: 60%;
+    }
+    .my_second-row-container{
+        width: 40%;
+    }
 }
