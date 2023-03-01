@@ -49,8 +49,7 @@
 }
 .my_data-content-main{
     height: 100%;
-    /*debug*/
-    background-color: orange;
+    padding: 20px;
 }
 /*MEDIA QUERIES*/
 /*MD QUERY*/
