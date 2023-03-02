@@ -134,6 +134,13 @@ a:hover{
     text-decoration: underline;
     color: #0071e6;
 }
+.form-control{
+    border-left: 0;
+}
+/*TODO*/
+.input-group-text{
+    background-color: white;
+}
 /*MEDIA QUERIES*/
 /*XS QUERY*/
 @media screen and (min-width: 200px) {
