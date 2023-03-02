@@ -122,6 +122,10 @@ a:hover{
     padding: 20px;
 }
 /*DATA CONTENT TOP CHILDS*/
+ul li a[href$="app"]{
+    font-size: 0.7em;
+    margin: 0 5px;
+}
 /*DATA CONTENT MAIN CHILDS*/
 .my_first-row-container,
 .my_second-row-container{
@@ -170,6 +174,10 @@ a:hover{
         display: none;
     }
     .my_sidebar ul li a span{
+        display: none;
+    }
+    /*DATA TOP CONTENT CHILDS*/
+    .my_ul li a[href$="app"]{
         display: none;
     }
     /*DATA MAIN CONTENT CHILDS*/
@@ -222,6 +230,13 @@ a:hover{
     .my_data-content-main{
         display: flex;
         gap: 10px;
+    }
+    /*DATA TOP CONTENT CHILDS*/
+    .my_ul li:nth-child(1){
+        display: none;
+    }
+    .my_ul li a[href$="app"]{
+        display: block;
     }
     /*DATA CONTENT MAIN CHILDS*/
     .my_first-row-container{
