@@ -43,7 +43,7 @@ a:hover{
 }
 /*MY BUTTON*/
 .my_button{
-    padding: 5px 5px;
+    padding: 5px;
     border-radius: 50px;
 }
 .my_rounded-btn{
@@ -124,12 +124,23 @@ a:hover{
     .my_sidebar ul li a span{
         display: none;
     }
+    /*DATA MAIN CONTENT CHILDS*/
+    /*NEXT CLASSES TABLE*/
+    .card-body th:nth-child(2),
+    .card-body th:nth-child(3){
+        display: none;
+    }
 }
 /*MD QUERY*/
 @media screen and (min-width: 768px) {
     /*DATA CONTENT CHILDS*/
     .my_data-content-top{
         height: var(--my-data-content-top-height-md);
+    }
+    /*NEXT CLASSES TABLE*/
+    .card-body th:nth-child(2),
+    .card-body th:nth-child(3){
+        display: inline-block ;
     }
 }
 /*LG QUERY*/
