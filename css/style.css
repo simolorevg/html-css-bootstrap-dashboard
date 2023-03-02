@@ -53,7 +53,6 @@ a:hover{
 .btn-secondary{
     width: 50px;
     height: 50px;
-    font-size: 1em;
     background-color: transparent;
     border: 1px solid white;
 }
@@ -190,6 +189,10 @@ ul li a[href$="app"]{
 .form-control{
     border-left: 0;
 }
+.form-control:focus{
+    border: 0;
+    box-shadow: none;
+}
 /*TODO*/
 .my_todo-list .my_border{
     padding: 5px 10px;
@@ -226,7 +229,7 @@ ul li a[href$="app"]{
     .card-body th:nth-child(3),
     .card-body td:nth-child(2),
     .card-body td:nth-child(3){
-        visibility: hidden;
+        visibility: collapse;
     }
 }
 /*MD QUERY*/
