@@ -127,8 +127,10 @@ a:hover{
     /*DATA MAIN CONTENT CHILDS*/
     /*NEXT CLASSES TABLE*/
     .card-body th:nth-child(2),
-    .card-body th:nth-child(3){
-        display: none;
+    .card-body th:nth-child(3),
+    .card-body td:nth-child(2),
+    .card-body td:nth-child(3){
+        visibility: collapse;
     }
 }
 /*MD QUERY*/
@@ -139,8 +141,10 @@ a:hover{
     }
     /*NEXT CLASSES TABLE*/
     .card-body th:nth-child(2),
-    .card-body th:nth-child(3){
-        display: inline-block ;
+    .card-body th:nth-child(3),
+    .card-body td:nth-child(2),
+    .card-body td:nth-child(3){
+        visibility: visible;
     }
 }
 /*LG QUERY*/
