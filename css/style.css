@@ -138,8 +138,19 @@ a:hover{
     border-left: 0;
 }
 /*TODO*/
-.input-group-text{
-    background-color: white;
+.my_todo-list .my_border{
+    padding: 5px 10px;
+    border-color: lightgray;
+}
+.my_todo-list .my_border:nth-child(1){
+    border-radius: 10px 10px 0 0;
+}
+.my_todo-list .my_border:nth-child(2){
+    border-top: none;
+    border-bottom: none;
+}
+.my_todo-list .my_border:nth-child(3){
+    border-radius: 0 0 10px 10px;
 }
 /*MEDIA QUERIES*/
 /*XS QUERY*/
