@@ -172,8 +172,12 @@ ul li a[href$="app"]{
 /*MY FIRST ROW CHILDS*/
 .my_faq{
     width: 100%;
-    border-bottom: 1px solid rgb(179, 175, 175);
+    padding: 10px;
     margin-bottom: 10px;
+}
+.my_faq:hover{
+    border: 1px solid blue;
+    border-radius: 10px;
 }
 .my_faq i{
     transition: rotate linear 0.1s;
