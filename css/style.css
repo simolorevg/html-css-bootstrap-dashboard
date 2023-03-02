@@ -129,6 +129,11 @@ a:hover{
 .my_faq:focus i{
     rotate: 180deg;
 }
+/*MY SECOND ROW CHILDS*/
+.my_anchor-tag{
+    text-decoration: underline;
+    color: #0071e6;
+}
 /*MEDIA QUERIES*/
 /*XS QUERY*/
 @media screen and (min-width: 200px) {
