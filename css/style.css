@@ -11,6 +11,8 @@ img{
 }
 ul{
     list-style-type: none;
+    margin-bottom: 0;
+    margin-top: none;
 }
 a{
     text-decoration: none;
@@ -46,17 +48,24 @@ a:hover{
 }
 /*MY BUTTON*/
 .my_button{
-    padding: 5px;
-    border-radius: 50px;
+    border-radius: 20px;
 }
 .my_rounded-btn{
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /*MY BUTTON COLORS*/
 .my_btn-primary{
     background-color: #2b32fb;
+    color: white;
+}
+.my_btn-primary:hover{
+    background-color: #44ccfd;
+    color: black;
 }
 /*NAVBAR CHILDS*/
 .my_navbar-col{
@@ -112,6 +121,7 @@ a:hover{
     height: 100%;
     padding: 20px;
 }
+/*DATA CONTENT TOP CHILDS*/
 /*DATA CONTENT MAIN CHILDS*/
 .my_first-row-container,
 .my_second-row-container{
