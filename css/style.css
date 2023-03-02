@@ -47,9 +47,13 @@ a:hover{
     border: 1px solid black;
 }
 /*BUTTONS*/
+.btn{
+    font-size: 0.7em;
+}
 .btn-secondary{
     width: 50px;
     height: 50px;
+    font-size: 1em;
     background-color: transparent;
     border: 1px solid white;
 }
@@ -112,10 +116,34 @@ a:hover{
     background-color: black;
     color: white;
     padding: 10px;
+    position: relative;
 }
-.my_sidebar ul li a i{
-    margin-right: 10px;
+.sidebar-top ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin-top: 10px;
+}
+.sidebar-top ul li:hover{
+    background-color: lightgray;
+}
+.sidebar-top ul li a i{
+    margin-right: 10px;
+}
+.sidebar-top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+}
+.sidebar-bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
 }
 .my_data-content{
     width: calc(100% - var(--my-sidebar-width));
@@ -135,7 +163,6 @@ a:hover{
 }
 /*DATA CONTENT TOP CHILDS*/
 ul li a[href$="app"]{
-    font-size: 0.7em;
     margin: 0 5px;
 }
 /*DATA CONTENT MAIN CHILDS*/
@@ -185,7 +212,8 @@ ul li a[href$="app"]{
     img[alt="Original Size Logo"]{
         display: none;
     }
-    .my_sidebar ul li a span{
+    .sidebar-top ul li a span,
+    .sidebar-bottom span{
         display: none;
     }
     /*DATA TOP CONTENT CHILDS*/
@@ -224,10 +252,12 @@ ul li a[href$="app"]{
     .my_navbar-logo{
         display: none;
     }
-    .my_sidebar ul li a span{
+    .sidebar-top ul li a span,
+    .sidebar-bottom span{
         display: block;
     }
-    .my_sidebar ul li a{
+    .sidebar-top ul li a,
+    .sidebar-bottom{
         display: flex;
         align-items: center;
     }
